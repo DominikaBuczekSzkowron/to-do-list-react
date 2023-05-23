@@ -1,0 +1,36 @@
+.section__bothButtons {
+    border: none;
+    background-color: transparent;
+    color: teal;
+    transition: 1s;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: right;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 10px 0 0 ;
+}
+
+@media (max-width:767px) {
+    .section__bothButtons {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+}
+
+.section__bothButtons:hover {
+    color: hsl(180, 100%, 30%);
+}
+
+.section__alignHederAndButtons {
+    display: flex;
+    justify-content: row;
+}
+
+.section__bothButtons:disabled {
+    color: #b1a9a9;
+    padding: 0 10px 0 0 ;
+    cursor: auto;
+
+}

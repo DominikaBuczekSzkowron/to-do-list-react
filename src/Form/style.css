@@ -1,0 +1,101 @@
+.section {
+    margin: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px #ddd;
+}
+
+.section__form {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #fff;
+
+}
+
+@media (min-width:768px) {
+    .section__form {
+        margin-bottom: 0px;
+        width: 100%;
+    }
+}
+
+@media (max-width:767px) {
+    .section__form {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+}
+
+.section__form--input {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 0;
+    background-color: #fff;
+    border-color: #eee;
+    height: 30px;
+    border-style: solid;
+    padding: 20px;
+}
+
+@media (min-width:768px) {
+    .section__form--input {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        margin-bottom: 0px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width:767px) {
+    .section__form--input {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+}
+
+.section__form--buttonAddNewTask {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    min-width: 150px;
+    padding: 20px;
+    height: 30px;
+    background-color: teal;
+    color: #fff;
+    border-color: teal;
+    border-style: solid;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.section__form--buttonAddNewTask:hover {
+    border-color: hsl(180, 100%, 30%);
+    background-color: hsl(180, 100%, 30%);
+    transform: scale(1.1);
+}
+
+@media (min-width:768px) {
+    .section__form--buttonAddNewTask {
+        display: flex;
+        flex-shrink: 0;
+        margin-right: 0px;
+        width: 180px;
+    }
+}
+
+@media (max-width:767px) {
+    .section__form--buttonAddNewTask {
+        display: flex;
+        flex-grow: 1;
+        max-width: auto;
+        min-width: 0;
+    }
+
+    .section__form--buttonAddNewTask:hover {
+        transform: scale(1.03);
+    }
+}
