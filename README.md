@@ -4,6 +4,9 @@ It's a simple to-do list tool.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Demo
+ https://dominikabuczekszkowron.github.io/to-do-list-react/
+
 ## Available Scripts
 
 In the project directory, you can run:
