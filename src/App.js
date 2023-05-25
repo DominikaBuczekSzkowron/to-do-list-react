@@ -16,7 +16,7 @@ function App() {
   return (
     <Container className="container">
       <Header title="Lista zadań" />
-    
+
       <Section
         title="Dodaj nowe zadanie"
         body={<Form />}

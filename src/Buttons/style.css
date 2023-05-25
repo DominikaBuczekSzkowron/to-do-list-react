@@ -8,7 +8,7 @@
     justify-content: right;
     align-items: center;
     cursor: pointer;
-    padding: 0 10px 0 0 ;
+    padding: 0 10px 0 0;
 }
 
 @media (max-width:767px) {
@@ -30,7 +30,7 @@
 
 .section__bothButtons:disabled {
     color: #b1a9a9;
-    padding: 0 10px 0 0 ;
+    padding: 0 10px 0 0;
     cursor: auto;
 
 }
