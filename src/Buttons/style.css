@@ -23,7 +23,7 @@
     color: hsl(180, 100%, 30%);
 }
 
-.section__alignHederAndButtons {
+.section__alignHeaderAndButtons {
     display: flex;
     justify-content: row;
 }
