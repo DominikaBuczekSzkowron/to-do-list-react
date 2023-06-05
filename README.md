@@ -7,6 +7,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Demo
  https://dominikabuczekszkowron.github.io/to-do-list-react/
 
+## Technologies
+
+- html 
+- css 
+- js 
+- React.js 
+- BEM convention
+
 ## Available Scripts
 
 In the project directory, you can run:
