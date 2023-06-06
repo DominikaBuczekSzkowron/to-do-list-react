@@ -6,8 +6,8 @@ const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
             <li
                 key={task.id}
                 className={`section__list--item ${task.done && hideDone
-                        ? "section__list--hideItem"
-                        : ""} `
+                    ? "section__list--hideItem"
+                    : ""} `
                 }
             >
                 <button
@@ -22,8 +22,8 @@ const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
 
                 <span
                     className={`section__list--text ${task.done
-                            ? " section__list--doneItem"
-                            : ""}`}>{task.content}
+                        ? " section__list--doneItem"
+                        : ""}`}>{task.content}
                 </span>
 
                 <button
