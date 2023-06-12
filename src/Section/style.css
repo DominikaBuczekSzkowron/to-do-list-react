@@ -1,24 +1,22 @@
 .section__header {
-    font-size: 20px;
-    padding: 20px;
-    margin: 0px;
-    display: flex;
-    flex-grow: 1;
-
+  font-size: 20px;
+  padding: 20px;
+  margin: 0px;
+  display: flex;
+  flex-grow: 1;
 }
 
 .section__body {
-    border-top: 1px solid #ddd;
-    display: flex;
-    justify-content: left;
-    flex-grow: 1;
-    padding: 0 20px 0 20px;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: left;
+  flex-grow: 1;
+  padding: 0 20px 0 20px;
 }
 
-
-@media (max-width:767px) {
-    .section__body {
-        display: flex;
-        flex-direction: column;
-    }
+@media (max-width: 767px) {
+  .section__body {
+    display: flex;
+    flex-direction: column;
+  }
 }
