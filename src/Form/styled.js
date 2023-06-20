@@ -1,33 +1,25 @@
-.section {
-  margin: 10px;
-  background-color: white;
-  box-shadow: 0px 0px 5px 0px #ddd;
-}
+import styled, { css } from "styled-components";
 
-.section__form {
+export const TaskForm = styled.form`
   display: flex;
   flex-wrap: wrap;
   padding: 20px;
   background-color: #fff;
   border-top: 1px solid #ddd;
-}
 
-@media (min-width: 768px) {
-  .section__form {
+  @media (min-width: 768px) {
     margin-bottom: 0px;
     width: 100%;
   }
-}
 
-@media (max-width: 767px) {
-  .section__form {
+  @media (max-width: 767px) {
     display: flex;
     flex-direction: column;
     margin-bottom: 0px;
   }
-}
+`;
 
-.section__form--input {
+export const TaskInput = styled.input`
   display: flex;
   flex-grow: 1;
   flex-shrink: 1;
@@ -37,10 +29,8 @@
   height: 30px;
   border-style: solid;
   padding: 20px;
-}
 
-@media (min-width: 768px) {
-  .section__form--input {
+  @media (min-width: 768px) {
     display: flex;
     flex-direction: row;
     justify-content: left;
@@ -48,17 +38,15 @@
     margin-right: 20px;
     margin-left: 20px;
   }
-}
 
-@media (max-width: 767px) {
-  .section__form--input {
+  @media (max-width: 767px) {
     margin-bottom: 20px;
     margin-right: 20px;
     margin-left: 20px;
   }
-}
+`;
 
-.section__form--buttonAddNewTask {
+export const ButtonAddNewTask = styled.button`
   display: flex;
   flex-shrink: 0;
   justify-content: center;
@@ -73,33 +61,15 @@
   transition: 1s;
   cursor: pointer;
   margin-right: 20px;
-}
 
-.section__form--buttonAddNewTask:hover {
-  border-color: hsl(180, 100%, 30%);
-  background-color: hsl(180, 100%, 30%);
-  transform: scale(1.1);
-}
+  &hover: {
+    transform: scale(1.03);
+  }
 
-@media (min-width: 768px) {
-  .section__form--buttonAddNewTask {
+  @media (min-width: 768px) {
     display: flex;
     flex-shrink: 0;
     margin-right: 20px;
     width: 180px;
   }
-}
-
-@media (max-width: 767px) {
-  .section__form--buttonAddNewTask {
-    display: flex;
-    flex-grow: 1;
-    max-width: auto;
-    min-width: 0;
-    margin-left: 20px;
-  }
-
-  .section__form--buttonAddNewTask:hover {
-    transform: scale(1.03);
-  }
-}
+`;
