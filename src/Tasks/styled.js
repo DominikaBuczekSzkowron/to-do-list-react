@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 export const List = styled.ul`
   padding: 20px;
-  background-color: #fff;
+  background-color: ${({ theme }) => theme.colors.backgroundColor};
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -44,7 +44,7 @@ export const Content = styled.span`
 export const ButtonDone = styled.button`
   width: 30px;
   height: 30px;
-  color: #fff;
+  color: ${({ theme }) => theme.colors.backgroundColor};
   background-color: rgb(17, 173, 17);
   border: none;
   text-decoration: none;

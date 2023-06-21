@@ -1,8 +1,8 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 export const Sections = styled.section`
   margin: 10px;
-  background-color: white;
+  background-color: ${({ theme }) => theme.colors.backgroundColor};
   box-shadow: 0px 0px 5px 0px #ddd;
 `;
 
@@ -14,7 +14,7 @@ export const BodyDiv = styled.div`
   padding: 0 20px 0 20px;
   align-items: center;
 
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     display: flex;
     flex-direction: column;
   }

@@ -1,9 +1,9 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 export const BothButtons = styled.button`
   border: none;
   background-color: transparent;
-  color: teal;
+  color: ${({ theme }) => theme.colors.primaryColor};
   transition: 1s;
   cursor: pointer;
   padding: 0 10px 0 0;
@@ -17,7 +17,7 @@ export const BothButtons = styled.button`
     cursor: auto;
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
