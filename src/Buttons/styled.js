@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const BothButtons = styled.button`
+export const Button = styled.button`
   border: none;
   background-color: transparent;
   color: ${({ theme }) => theme.colors.primaryColor};
@@ -9,7 +9,7 @@ export const BothButtons = styled.button`
   padding: 0 10px 0 0;
 
   &:hover {
-    color: hsl(180, 100%, 30%);
+    filter: brightness(120%);
   }
   &:disabled {
     color: #b1a9a9;
