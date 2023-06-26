@@ -20,14 +20,15 @@ const theme = {
 };
 
 function App() {
-  const [hideDone, setHideDone] = useState(false);
-
-  const toggleHideDone = () => {
-    setHideDone((hideDone) => !hideDone);
-  };
-
-  const { tasks, removeTask, toggleTaskDone, setAllDone, addNewTask } =
-    useTasks();
+  const {
+    tasks,
+    removeTask,
+    toggleTaskDone,
+    setAllDone,
+    addNewTask,
+    hideDone,
+    toggleHideDone,
+  } = useTasks();
 
   return (
     <ThemeProvider theme={theme}>
