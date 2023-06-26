@@ -6,7 +6,7 @@ export const Sections = styled.section`
   box-shadow: 0px 0px 5px 0px #ddd;
 `;
 
-export const BodyDiv = styled.div`
+export const Header = styled.div`
   border-top: 1px solid #ddd;
   display: flex;
   justify-content: left;
@@ -20,7 +20,7 @@ export const BodyDiv = styled.div`
   }
 `;
 
-export const HeaderContent = styled.h2`
+export const Title = styled.h2`
   font-size: 20px;
   padding: 20px;
   margin: 0px;
