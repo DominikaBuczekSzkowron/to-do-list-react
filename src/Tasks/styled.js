@@ -41,11 +41,9 @@ export const Content = styled.span`
     `}
 `;
 
-export const ButtonDone = styled.button`
+const Button = styled.button`
   width: 30px;
   height: 30px;
-  color: ${({ theme }) => theme.colors.backgroundColor};
-  background-color: rgb(17, 173, 17);
   border: none;
   text-decoration: none;
   display: flex;
@@ -54,24 +52,23 @@ export const ButtonDone = styled.button`
   justify-content: flex-start;
   transition: 1s;
   cursor: pointer;
+`;
+
+export const ButtonDone = styled(Button)`
+  color: ${({ theme }) => theme.colors.backgroundColor};
+  background-color: rgb(17, 173, 17);
 
   &:hover {
-    background-color: hsl(120, 82%, 45%);
+    filter: brightness(120%);
   }
 `;
-export const ButtonRemove = styled.button`
-  width: 30px;
-  height: 30px;
+
+export const ButtonRemove = styled(Button)`
   background-color: red;
-  border: none;
-  text-decoration: none;
   display: flex;
   justify-content: center;
-  align-items: center;
-  transition: 1s;
-  cursor: pointer;
 
   &:hover {
-    background-color: hsl(0, 100%, 70%);
+    filter: brightness(120%);
   }
 `;
