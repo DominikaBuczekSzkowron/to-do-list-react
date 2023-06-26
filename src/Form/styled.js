@@ -64,6 +64,7 @@ export const ButtonAddNewTask = styled.button`
 
   &:hover {
     transform: scale(1.03);
+    filter: brightness(120%);
   }
 
   @media (min-width: 768px) {
