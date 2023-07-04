@@ -10,9 +10,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Technologies
 
 - html 
-- css 
 - js 
-- React.js 
+- React.js
+- Redux
+- Styled-Components 
 - BEM convention
 
 ## Available Scripts
