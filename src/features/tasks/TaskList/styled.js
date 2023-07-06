@@ -32,8 +32,8 @@ export const Content = styled.span`
   align-self: left;
   margin: 0px 20px;
 
-  ${({ done }) =>
-    done &&
+  ${({ $done }) =>
+    $done &&
     css`
       text-decoration: line-through;
       display: flex;
