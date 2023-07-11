@@ -32,7 +32,9 @@ const taskSlice = createSlice({
       tasks.splice(index, 1);
     },
 
-    fetchExampleTasks: () => {},
+    fetchExampleTasks: (state) => {
+      state.loading = true;
+    },
 
     setTasks: (state, { payload: tasks }) => {
       state.tasks = tasks;
