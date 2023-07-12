@@ -5,7 +5,7 @@ import {
   selectHideDone,
   selectTasksByQuery,
 } from "../../taskSlice";
-import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
+import { useQueryParameter } from "../queryParameters";
 import {
   List,
   Item,
@@ -17,9 +17,7 @@ import {
 import searchQueryParamName from "../searchQueryParamName";
 
 const TaskList = () => {
-  const location = useLocation();
-  const query = new URLSearchParams(location.search).get(searchQueryParamName);
-
+  const query = useQueryParameter(searchQueryParamName);
   const tasks = useSelector((state) => selectTasksByQuery(state, query));
   const hideDone = useSelector(selectHideDone);
 
