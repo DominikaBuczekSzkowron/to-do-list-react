@@ -7,7 +7,7 @@ import {
 import TasksPage from "./features/tasks/TasksPage";
 import TaskPage from "./features/tasks/TaskPage";
 import AuthorPage from "./features/author/AuthorPage";
-import { Navigation, NavigationListItem, StyledNavLink } from "./styled";
+import { Navigation, StyledNavLink } from "./styled";
 
 export default () => (
   <HashRouter>

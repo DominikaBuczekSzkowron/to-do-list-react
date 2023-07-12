@@ -5,8 +5,15 @@ import {
   selectHideDone,
   selectTasksByQuery,
 } from "../../taskSlice";
-import { Link, useLocation } from "react-router-dom/cjs/react-router-dom.min";
-import { List, Item, Content, ButtonDone, ButtonRemove } from "./styled";
+import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
+import {
+  List,
+  Item,
+  Content,
+  ButtonDone,
+  ButtonRemove,
+  ItemNavLink,
+} from "./styled";
 import searchQueryParamName from "../searchQueryParamName";
 
 const TaskList = () => {
@@ -26,7 +33,7 @@ const TaskList = () => {
             {task.done ? "✔" : ""}
           </ButtonDone>
           <Content $done={task.done}>
-            <Link to={`/zadania/${task.id}`}>{task.content}</Link>
+            <ItemNavLink to={`/zadania/${task.id}`}>{task.content}</ItemNavLink>
           </Content>
           <ButtonRemove onClick={() => dispatch(removeTask(task.id))}>
             🗑️

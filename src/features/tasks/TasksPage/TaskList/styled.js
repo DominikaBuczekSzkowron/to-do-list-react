@@ -1,4 +1,6 @@
 import styled, { css } from "styled-components";
+import { NavLink } from "react-router-dom/cjs/react-router-dom";
+const activeClassName = "active";
 
 export const List = styled.ul`
   padding: 20px;
@@ -67,6 +69,17 @@ export const ButtonRemove = styled(Button)`
   background-color: red;
   display: flex;
   justify-content: center;
+
+  &:hover {
+    filter: brightness(120%);
+  }
+`;
+
+export const ItemNavLink = styled(NavLink).attrs(() => ({
+  activeClassName: activeClassName,
+}))`
+  color: black;
+  text-decoration: none;
 
   &:hover {
     filter: brightness(120%);
