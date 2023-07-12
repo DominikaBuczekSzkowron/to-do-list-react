@@ -1,11 +1,14 @@
 # Task list
  
-It's a simple to-do list tool. 
+It's a to-do list tool. Tick when the task is done, click the trash to delete unnecessary tasks. There are: sample tasks to fill the task list, one special button that can mark all tasks as done and another that can hide all completed tasks or show those that were previously hidden. In addition, it includes the ability to filter tasks. Plan your day with a to-do list!  
+That to-do-list was an exercise in a programming course of Internet school YouCode. 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Demo
  https://dominikabuczekszkowron.github.io/to-do-list-react/
+
+ ![How to use the list](https://github.com/DominikaBuczekSzkowron/to-do-list-react/blob/main/public/to-do-list_full_version.gif)
 
 ## Technologies
 
@@ -13,6 +16,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - js 
 - React.js
 - Redux
+- Redux-Saga
+- React Router
 - Styled-Components 
 - BEM convention
 
