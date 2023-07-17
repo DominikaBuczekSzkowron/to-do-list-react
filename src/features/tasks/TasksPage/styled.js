@@ -1,5 +1,12 @@
 import styled from "styled-components";
 
+export const Container = styled.main`
+  font-family: "Montserrat", sans-serif;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 20px;
+`;
+
 export const Button = styled.button`
   border: none;
   background-color: transparent;

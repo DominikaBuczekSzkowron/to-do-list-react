@@ -3,13 +3,13 @@ import TaskList from "./TaskList";
 import Buttons from "./Buttons";
 import Section from "../../../common/Section";
 import Header from "../../../common/Header";
-import Container from "../../../common/Container";
+import { Container } from "./styled";
 import Search from "./Search";
 import ExamplesTasksButton from "./ExamplesTasksButton";
 
 function TasksPage() {
   return (
-    <Container className="container">
+    <Container>
       <Header title="Lista zadań" />
       <Section
         title="Dodaj nowe zadanie"

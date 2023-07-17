@@ -46,4 +46,10 @@ export const ButtonAddNewTask = styled.button`
     margin-right: 20px;
     width: 180px;
   }
+
+  @media (max-width: 767px) {
+    display: flex;
+    flex-shrink: 0;
+    margin-left: 20px;
+  }
 `;
